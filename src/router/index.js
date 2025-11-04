@@ -10,6 +10,7 @@ import UserInfo from '@/components/admin/UserInfo.vue'
 import AdminLayout from '../pages/admin/AdminLayout'
 import AdminCabinet from '../pages/admin/AdminCabinet'
 import EditProfile from '../pages/admin/EditProfile'
+import MyBinds from '@/pages/admin/MyBinds.vue'
 import store from '@/store'
 export default VueRouter.createRouter({
     history:VueRouter.createWebHashHistory(),
@@ -81,7 +82,14 @@ export default VueRouter.createRouter({
                     path:'/editProfile',
                     name:'editProfile',
                     component:EditProfile
-                },               
+                },    
+                {
+                    path:'/myBinds',
+                    name: 'Mybinds',
+                    component:MyBinds
+
+
+                }  ,         
             ]
         },
     ]

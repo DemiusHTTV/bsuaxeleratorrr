@@ -12,6 +12,7 @@
             <div class="row">
                 <div class="col-4">
                     <button class="btn btn-danger" @click="logout()">Выйти</button>
+                    <button class="btn btn-success btn-md mt-5" @click="editPage()">Мои ставки</button>
                     <button class="btn btn-success btn-md mt-5" @click="editPage()">Изменить</button>
                 </div>
             </div>
@@ -59,6 +60,9 @@ export default {
         },
         editPage(){
                this.$router.push('/editProfile')
+       },
+       myBinds(){
+        this.$router.push('./myBinds')
        }
     },
     mounted(){
